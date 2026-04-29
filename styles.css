@@ -6,9 +6,12 @@
   --line: rgba(160, 191, 224, 0.18);
   --text: #e8f0fb;
   --muted: #9ab0ca;
-  --brand: #6fe3ff;
-  --brand-strong: #4fb8ff;
-  --accent: #8b7cff;
+  --brand: #F36B21;
+  --brand-strong: #ff8a49;
+  --accent: #09135A;
+  --accent-strong: #14207f;
+  --display-font: 'Quivera Regular', 'Orbitron', 'Rajdhani', 'Inter', sans-serif;
+  --body-font: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
   --shadow: 0 24px 80px rgba(0, 0, 0, 0.35);
   --radius: 24px;
   --radius-sm: 16px;
@@ -25,10 +28,10 @@ html {
 
 body {
   margin: 0;
-  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-family: var(--body-font);
   background:
-    radial-gradient(circle at top left, rgba(79, 184, 255, 0.16), transparent 32%),
-    radial-gradient(circle at top right, rgba(139, 124, 255, 0.16), transparent 28%),
+    radial-gradient(circle at top left, rgba(243, 107, 33, 0.14), transparent 32%),
+    radial-gradient(circle at top right, rgba(9, 19, 90, 0.24), transparent 28%),
     linear-gradient(180deg, #081120 0%, #091627 42%, #07111f 100%);
   color: var(--text);
 }
@@ -73,22 +76,14 @@ body::before {
 .brand {
   display: inline-flex;
   align-items: center;
-  gap: 0.75rem;
   color: var(--text);
   text-decoration: none;
-  font-weight: 700;
-  letter-spacing: 0.01em;
 }
 
-.brand-mark {
-  display: grid;
-  place-items: center;
-  width: 2.75rem;
-  height: 2.75rem;
-  border-radius: 999px;
-  background: linear-gradient(135deg, var(--brand), var(--accent));
-  color: #07111f;
-  box-shadow: var(--shadow);
+.brand-logo {
+  display: block;
+  width: min(320px, 46vw);
+  height: auto;
 }
 
 .site-nav {
@@ -103,6 +98,14 @@ body::before {
   text-decoration: none;
 }
 
+.site-nav a,
+.button,
+.card-icon,
+.stat-label,
+.eyebrow {
+  font-family: var(--display-font);
+}
+
 .site-nav a:hover,
 .site-nav a:focus-visible,
 .social-links a:hover,
@@ -111,7 +114,7 @@ body::before {
 }
 
 .hero {
-  padding: 5.5rem 0 4rem;
+  padding: 5.5rem 0 2.5rem;
 }
 
 .hero-grid,
@@ -141,20 +144,26 @@ ul {
 }
 
 h1 {
+  font-family: var(--display-font);
   font-size: clamp(2.6rem, 6vw, 4.8rem);
   line-height: 0.98;
+  letter-spacing: 0.01em;
   margin-bottom: 1.25rem;
   max-width: 12ch;
 }
 
 h2 {
+  font-family: var(--display-font);
   font-size: clamp(2rem, 4vw, 3.1rem);
   line-height: 1.04;
+  letter-spacing: 0.01em;
   margin-bottom: 1rem;
 }
 
 h3 {
+  font-family: var(--display-font);
   font-size: 1.15rem;
+  letter-spacing: 0.02em;
   margin-bottom: 0.65rem;
 }
 
@@ -203,6 +212,11 @@ li {
   color: #07111f;
 }
 
+.button-primary:hover,
+.button-primary:focus-visible {
+  box-shadow: 0 12px 34px rgba(243, 107, 33, 0.28);
+}
+
 .button-secondary {
   color: var(--text);
   border: 1px solid rgba(255, 255, 255, 0.16);
@@ -245,6 +259,25 @@ li {
 .hero-panel {
   display: grid;
   gap: 1rem;
+  padding: 1.25rem;
+  background: linear-gradient(180deg, rgba(255,255,255,0.04), rgba(255,255,255,0.02));
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+.hero-panel-head {
+  padding: 0.25rem 0 0.5rem;
+}
+
+.hero-panel-head p {
+  margin: 0.85rem 0 0;
+}
+
+.hero-panel-logo {
+  display: block;
+  width: min(320px, 100%);
+  height: auto;
 }
 
 .stat-card,
@@ -259,6 +292,29 @@ li {
 
 .stat-card {
   padding: 1.35rem;
+}
+
+.trust-strip {
+  padding: 0 0 1.25rem;
+}
+
+.trust-strip-inner {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 0.85rem;
+}
+
+.trust-strip-inner span {
+  display: block;
+  padding: 0.95rem 1rem;
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 999px;
+  background: rgba(255,255,255,0.025);
+  color: var(--text);
+  text-align: center;
+  font-family: var(--display-font);
+  font-size: 0.9rem;
+  letter-spacing: 0.03em;
 }
 
 .stat-card strong {
@@ -309,9 +365,10 @@ li {
   height: 3.25rem;
   padding: 0 0.85rem;
   border-radius: 999px;
-  background: rgba(111, 227, 255, 0.1);
+  background: rgba(243, 107, 33, 0.1);
   color: var(--brand);
   font-weight: 800;
+  letter-spacing: 0.04em;
   margin-bottom: 1rem;
 }
 
@@ -365,7 +422,8 @@ li {
   .hero-grid,
   .two-column,
   .contact-panel,
-  .card-grid {
+  .card-grid,
+  .trust-strip-inner {
     grid-template-columns: 1fr;
   }
 
@@ -379,6 +437,10 @@ li {
   .footer-wrap {
     flex-direction: column;
     align-items: flex-start;
+  }
+
+  .brand-logo {
+    width: min(250px, 70vw);
   }
 
   .site-nav {

@@ -19,7 +19,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Orbitron:wght@500;700;800&family=Rajdhani:wght@500;600;700&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./styles.css" />
@@ -29,8 +29,11 @@
       <header class="site-header">
         <div class="container nav-wrap">
           <a class="brand" href="#top" aria-label="MIS Solutions home">
-            <span class="brand-mark">MIS</span>
-            <span class="brand-text">MIS Solutions</span>
+            <img
+              class="brand-logo"
+              src="./assets/mis-solutions-logo.png"
+              alt="MIS Solutions"
+            />
           </a>
           <nav class="site-nav" aria-label="Primary">
             <a href="#services">Services</a>
@@ -63,6 +66,14 @@
             </div>
 
             <aside class="hero-panel" aria-label="Key capabilities">
+              <div class="hero-panel-head">
+                <img
+                  class="hero-panel-logo"
+                  src="./assets/mis-solutions-logo.png"
+                  alt="MIS Solutions logo"
+                />
+                <p>Infrastructure roots. Cloud-first execution. Practical delivery.</p>
+              </div>
               <div class="stat-card">
                 <span class="stat-label">Focused on</span>
                 <strong>AWS, Azure, Microsoft 365</strong>
@@ -79,6 +90,15 @@
                 <p>Long-standing consulting roots with an emphasis on real-world delivery and support.</p>
               </div>
             </aside>
+          </div>
+        </section>
+
+        <section class="trust-strip" aria-label="Core capabilities">
+          <div class="container trust-strip-inner">
+            <span>Cloud migration strategy</span>
+            <span>Hybrid backup & replication</span>
+            <span>Infrastructure modernization</span>
+            <span>Microsoft 365 governance</span>
           </div>
         </section>
 
