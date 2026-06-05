@@ -3,16 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>MIS Solutions | Cloud, Infrastructure & Microsoft 365 Consulting</title>
+    <title>MIS Solutions | AWS, Azure, Microsoft 365 & Claude AI Services</title>
     <meta
       name="description"
-      content="MIS Solutions helps organizations modernize infrastructure, adopt cloud platforms, and improve resilience across AWS, Azure, and Microsoft 365."
+      content="MIS Solutions helps organizations migrate, optimize, and integrate cloud environments across AWS and Azure, govern Microsoft 365, and prepare Claude AI initiatives for production."
     />
-    <meta name="theme-color" content="#0b1324" />
+    <meta name="theme-color" content="#07111f" />
     <meta property="og:title" content="MIS Solutions" />
     <meta
       property="og:description"
-      content="Cloud, infrastructure, and Microsoft 365 consulting for modernization, migration, and operational resilience."
+      content="Practical cloud modernization, Microsoft 365 governance, and Claude AI services from infrastructure consultants who understand hybrid environments."
     />
     <meta property="og:type" content="website" />
     <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
@@ -22,7 +22,7 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Orbitron:wght@500;700;800&family=Rajdhani:wght@500;600;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./styles.css?v=20260428d" />
+    <link rel="stylesheet" href="./styles.css?v=20260605a" />
   </head>
   <body>
     <div class="site-shell">
@@ -38,9 +38,9 @@
             </span>
           </a>
           <nav class="site-nav" aria-label="Primary">
-            <a href="#services">Services</a>
-            <a href="#approach">Approach</a>
-            <a href="#about">About</a>
+            <a href="#aws-azure">AWS & Azure</a>
+            <a href="#microsoft">Microsoft</a>
+            <a href="#anthropic">Anthropic</a>
             <a href="#contact">Contact</a>
           </nav>
         </div>
@@ -50,24 +50,25 @@
         <section class="hero">
           <div class="container hero-grid">
             <div class="hero-copy">
-              <p class="eyebrow">Cloud & infrastructure consulting</p>
-              <h1>Modernize your data center. Build the right cloud foundation.</h1>
+              <p class="eyebrow">Cloud modernization and AI delivery</p>
+              <h1>Move with confidence across cloud, collaboration, and AI.</h1>
               <p class="hero-text">
-                MIS Solutions helps organizations design, implement, and support practical cloud and
-                infrastructure improvements across AWS, Azure, Microsoft 365, and hybrid environments.
+                MIS Solutions helps organizations migrate critical systems, optimize cloud spend and
+                reliability, govern Microsoft 365, and prepare Claude-powered AI initiatives for
+                production use.
               </p>
               <div class="hero-actions">
                 <a class="button button-primary" href="mailto:info@misfirm.com">Start a conversation</a>
                 <a class="button button-secondary" href="#services">Explore services</a>
               </div>
               <ul class="hero-points" aria-label="Key service areas">
-                <li>AWS migration, resilience, and optimization</li>
-                <li>Azure adoption, backup, and hybrid integration</li>
-                <li>Microsoft 365 licensing and governance</li>
+                <li>AWS and Azure migration, optimization, and hybrid integration</li>
+                <li>Microsoft 365 governance for Teams, SharePoint, OneDrive, and guest access</li>
+                <li>Claude AI readiness, implementation planning, and services delivery</li>
               </ul>
             </div>
 
-            <aside class="hero-panel" aria-label="Key capabilities">
+            <aside class="hero-panel" aria-label="MIS Solutions summary">
               <div class="hero-panel-head">
                 <span class="logo-surface logo-surface-panel">
                   <img
@@ -76,22 +77,22 @@
                     alt="MIS Solutions logo"
                   />
                 </span>
-                <p>Infrastructure roots. Cloud-first execution. Practical delivery.</p>
+                <p>Infrastructure roots. Cloud-first execution. AI-ready delivery.</p>
               </div>
               <div class="stat-card">
-                <span class="stat-label">Focused on</span>
-                <strong>AWS, Azure, Microsoft 365</strong>
-                <p>Modern cloud platforms paired with pragmatic infrastructure expertise.</p>
+                <span class="stat-label">Cloud focus</span>
+                <strong>AWS and Azure</strong>
+                <p>Migration, optimization, and hybrid integration for real-world environments.</p>
               </div>
               <div class="stat-card">
-                <span class="stat-label">Core work</span>
-                <strong>Migration, integration, optimization</strong>
-                <p>From rehosting and replatforming to backup, replication, and governance.</p>
+                <span class="stat-label">Collaboration focus</span>
+                <strong>Microsoft governance</strong>
+                <p>Provisioning, lifecycle, ownership, access, and cleanup at Microsoft 365 scale.</p>
               </div>
               <div class="stat-card">
-                <span class="stat-label">Established</span>
-                <strong>1999</strong>
-                <p>Long-standing consulting roots with an emphasis on real-world delivery and support.</p>
+                <span class="stat-label">AI focus</span>
+                <strong>Anthropic Claude</strong>
+                <p>Building a services practice around safe, useful, production-grade AI adoption.</p>
               </div>
             </aside>
           </div>
@@ -99,10 +100,10 @@
 
         <section class="trust-strip" aria-label="Core capabilities">
           <div class="container trust-strip-inner">
-            <span>Cloud migration strategy</span>
-            <span>Hybrid backup & replication</span>
-            <span>Infrastructure modernization</span>
-            <span>Microsoft 365 governance</span>
+            <span>AWS</span>
+            <span>Azure</span>
+            <span>Microsoft 365</span>
+            <span>Anthropic Claude</span>
           </div>
         </section>
 
@@ -110,68 +111,148 @@
           <div class="container">
             <div class="section-heading">
               <p class="eyebrow">Services</p>
-              <h2>Practical support across cloud and collaboration platforms</h2>
+              <h2>Focused practices for modern infrastructure and enterprise AI</h2>
               <p>
-                The current MIS focus centers on modernization efforts that improve reliability,
-                flexibility, and operational clarity.
+                MIS Solutions keeps the scope clear: move workloads well, run them efficiently,
+                connect them to the systems that remain, govern collaboration, and bring AI into
+                business workflows with discipline.
               </p>
             </div>
 
-            <div class="card-grid">
-              <article class="service-card">
+            <div class="service-grid">
+              <article class="service-card service-card-large" id="aws-azure">
                 <div class="card-icon">AWS</div>
                 <h3>Amazon Web Services</h3>
-                <ul>
-                  <li>Migration: rehost, replatform, refactor</li>
-                  <li>Hybrid storage, backup, and replication integration</li>
-                  <li>Cost, reliability, and availability optimization</li>
-                </ul>
+                <p>
+                  AWS engagements focus on practical modernization: reduce migration risk, tune the
+                  operating model, and connect cloud services back to business systems that still
+                  live on premises or in other clouds.
+                </p>
+                <div class="power-grid">
+                  <div>
+                    <h4>Migration</h4>
+                    <p>Discovery, landing zones, rehosting, replatforming, refactoring paths, cutover planning, and validation.</p>
+                  </div>
+                  <div>
+                    <h4>Optimization</h4>
+                    <p>Cost controls, right-sizing, reliability reviews, backup posture, availability design, and operational tuning.</p>
+                  </div>
+                  <div>
+                    <h4>Hybrid integration</h4>
+                    <p>Connectivity, identity alignment, storage, replication, observability, and backup integration across environments.</p>
+                  </div>
+                </div>
               </article>
-              <article class="service-card">
+
+              <article class="service-card service-card-large">
                 <div class="card-icon">AZ</div>
                 <h3>Microsoft Azure</h3>
-                <ul>
-                  <li>Cloud transition planning and phased migration</li>
-                  <li>Hybrid architecture and resilience design</li>
-                  <li>Operational tuning for performance and spend</li>
-                </ul>
-              </article>
-              <article class="service-card">
-                <div class="card-icon">M365</div>
-                <h3>Microsoft 365</h3>
-                <ul>
-                  <li>Licensing guidance</li>
-                  <li>Teams and SharePoint governance</li>
-                  <li>Alignment between collaboration and security posture</li>
-                </ul>
+                <p>
+                  Azure work is shaped for organizations with Microsoft investments, hybrid
+                  infrastructure, and business applications that need a measured path to cloud.
+                </p>
+                <div class="power-grid">
+                  <div>
+                    <h4>Migration</h4>
+                    <p>Assessment, architecture, workload grouping, server and application migration, and staged production cutovers.</p>
+                  </div>
+                  <div>
+                    <h4>Optimization</h4>
+                    <p>Resource governance, cost visibility, resiliency improvements, backup strategy, security baselines, and performance tuning.</p>
+                  </div>
+                  <div>
+                    <h4>Hybrid integration</h4>
+                    <p>Active Directory, networking, identity, storage, recovery, monitoring, and cross-cloud or on-premises dependencies.</p>
+                  </div>
+                </div>
               </article>
             </div>
           </div>
         </section>
 
-        <section class="section section-accent" id="approach">
+        <section class="section section-accent" id="microsoft">
           <div class="container two-column">
             <div>
-              <p class="eyebrow">Approach</p>
-              <h2>Consulting that starts with the environment you actually have</h2>
+              <p class="eyebrow">Microsoft</p>
+              <h2>Govern Microsoft 365 before sprawl becomes the operating model</h2>
               <p>
-                MIS Solutions grew from hands-on infrastructure consulting and still approaches cloud
-                work with that mindset: understand the constraints, reduce risk, and move toward a
-                cleaner operating model step by step.
+                Teams, SharePoint, OneDrive, and guest collaboration create value quickly, but they
+                also create sprawl, ownership gaps, over-sharing, and storage growth. MIS Solutions
+                helps customers implement a governance layer that turns policy into repeatable action.
+              </p>
+              <a class="text-link" href="#contact">Discuss Microsoft governance</a>
+            </div>
+            <div class="governance-list">
+              <div>
+                <h3>Provisioning and templates</h3>
+                <p>Standardize how teams, sites, workspaces, and collaboration areas are requested, approved, named, and created.</p>
+              </div>
+              <div>
+                <h3>Lifecycle and cleanup</h3>
+                <p>Automate reviews, archive inactive workspaces, reduce duplicate content, and keep owners accountable.</p>
+              </div>
+              <div>
+                <h3>Access and risk control</h3>
+                <p>Expose risky sharing, guest access, ownerless workspaces, and permissions drift before they become audit findings.</p>
+              </div>
+              <div>
+                <h3>AI and Copilot readiness</h3>
+                <p>Improve the quality, security, and lifecycle hygiene of Microsoft 365 content before AI tools amplify existing issues.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section" id="anthropic">
+          <div class="container ai-panel">
+            <div>
+              <p class="eyebrow">Anthropic</p>
+              <h2>Building a Claude services delivery practice</h2>
+              <p>
+                Anthropic's Claude Partner Network is creating a path for firms that help customers
+                move from AI pilots to production systems. MIS Solutions is aligning its services
+                around the work that matters most in production: integration, evaluation, governance,
+                workflow design, and measurable outcomes.
               </p>
             </div>
-            <div class="approach-list">
+            <div class="ai-cards">
+              <article>
+                <h3>AI readiness</h3>
+                <p>Use-case discovery, data access review, risk framing, model-selection guidance, and success criteria.</p>
+              </article>
+              <article>
+                <h3>Claude implementation</h3>
+                <p>Workflow design, prompt and context strategy, retrieval patterns, MCP planning, and application integration.</p>
+              </article>
+              <article>
+                <h3>Production controls</h3>
+                <p>Evaluations, human review, auditability, security boundaries, rollout planning, and operational support.</p>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section class="section section-tight" id="approach">
+          <div class="container approach-shell">
+            <div class="section-heading">
+              <p class="eyebrow">Approach</p>
+              <h2>Advisory that stays close to delivery</h2>
+            </div>
+            <div class="approach-grid">
               <div>
+                <span>01</span>
                 <h3>Assess</h3>
-                <p>Review existing infrastructure, dependencies, resilience gaps, and modernization goals.</p>
+                <p>Map infrastructure, workloads, collaboration sprawl, dependencies, security requirements, and business priorities.</p>
               </div>
               <div>
+                <span>02</span>
                 <h3>Design</h3>
-                <p>Shape a practical path for migration, integration, governance, and ongoing support.</p>
+                <p>Shape pragmatic roadmaps for cloud migration, hybrid integration, Microsoft governance, and AI delivery.</p>
               </div>
               <div>
+                <span>03</span>
                 <h3>Implement</h3>
-                <p>Execute improvements with an emphasis on continuity, manageability, and supportability.</p>
+                <p>Execute with practical controls, clear ownership, measurable outcomes, and supportable operating models.</p>
               </div>
             </div>
           </div>
@@ -185,10 +266,10 @@
             </div>
             <p>
               Established in 1999 in Boston, Massachusetts, MIS Solutions LLC originally operated as
-              MIS Consulting. The firm began as a sole proprietorship serving organizations that needed
-              technology consulting expertise, with early work centered on compute, virtualization,
-              storage, backup, and replication. Today, that foundation extends into cloud services with
-              emphasis on AWS, Microsoft Azure, Microsoft 365, and broader modernization initiatives.
+              MIS Consulting. The firm began by helping organizations with compute, virtualization,
+              storage, backup, and replication. That infrastructure foundation now supports a focused
+              services portfolio across AWS, Azure, Microsoft 365 governance, and emerging Claude AI
+              delivery.
             </p>
           </div>
         </section>
@@ -197,10 +278,10 @@
           <div class="container contact-panel">
             <div>
               <p class="eyebrow">Contact</p>
-              <h2>Questions or comments?</h2>
+              <h2>Ready to modernize with less noise?</h2>
               <p>
-                Reach out to start a conversation about infrastructure modernization, cloud adoption,
-                or Microsoft 365 governance.
+                Start a conversation about cloud migration, cloud optimization, hybrid integration,
+                Microsoft 365 governance, or Claude AI services.
               </p>
             </div>
             <div class="contact-actions">
