@@ -143,7 +143,25 @@ body::before {
 }
 
 .hero {
-  padding: 5.5rem 0 2.75rem;
+  padding: 6.5rem 0 3.5rem;
+  position: relative;
+}
+
+.hero-background-grid {
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(255,255,255,0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,0.04) 1px, transparent 1px);
+  background-size: 60px 60px;
+  opacity: 0.35;
+  pointer-events: none;
+  mask-image: radial-gradient(circle at center, black 40%, transparent 75%);
+}
+
+.hero-grid {
+  position: relative;
+  z-index: 2;
 }
 
 .hero-grid,
