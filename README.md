@@ -1,47 +1,25 @@
-# misfirm.com
+# MIS Firm Website
 
-Static one-page site for MIS Solutions.
+Static website for MIS Solutions, focused on cloud, AI, infrastructure, and technology consulting services.
 
-The current mockup positions MIS Solutions around:
+## Published Page
 
-- AWS and Azure migration, optimization, and hybrid integration
-- Microsoft 365 governance without naming the underlying governance platform
-- Anthropic Claude services readiness and delivery practice development
+```text
+https://numerate64.github.io/misfirm.com/
+```
 
 ## Files
 
-- `index.html` - main site markup
-- `styles.css` - site styling
-- `script.js` - footer year helper
-- `CNAME` - GitHub Pages custom domain value for `misfirm.com`
+- `index.html` - page structure and content.
+- `styles.css` - responsive layout, brand styling, and component styles.
+- `script.js` - browser interactions.
+- `assets/` - logo assets.
+- `favicon.svg` - site icon.
 
 ## Local Preview
 
-From this folder:
-
-```bash
+```sh
 python3 -m http.server 8000
 ```
 
-Then open <http://localhost:8000>.
-
-## GitHub Pages Publishing
-
-1. Use the repo `github.com/numerate64/misfirm.com`.
-2. Push this directory to the `main` branch.
-3. In GitHub Pages settings, serve from the default branch root.
-4. Keep the `CNAME` file containing `misfirm.com`.
-5. Point DNS for `misfirm.com` to GitHub Pages.
-
-Recommended apex records:
-
-```text
-A     @     185.199.108.153
-A     @     185.199.109.153
-A     @     185.199.110.153
-A     @     185.199.111.153
-AAAA  @     2606:50c0:8000::153
-AAAA  @     2606:50c0:8001::153
-AAAA  @     2606:50c0:8002::153
-AAAA  @     2606:50c0:8003::153
-```
+This is a static GitHub Pages site. Push changes to the configured Pages branch to publish updates.
